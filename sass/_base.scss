@@ -1,0 +1,71 @@
+*, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+::selection {
+    background-color: $primary-color;
+    color: $primary-background;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: $primary-background;
+    box-sizing: border-box;
+    color: $primary-font;
+    font-family: "Lora", "Georgia", serif;
+    font-size: 100%;
+    line-height: 1.5;
+    @media only screen and (min-width: 992px){
+        font-size: 112.5%;
+        padding-left: 17rem;
+    }
+}
+
+h1 {
+    color: $primary-color;
+    font-family: "Lato", "Arial", sans-serif;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+h2 {
+    border-left: 0.5rem solid $primary-light;
+    font-family: "Lato", "Arial", sans-serif;
+    padding-left: 0.75rem;
+    text-transform: uppercase;
+}
+
+h3 {
+    text-transform: uppercase;
+}
+
+p {
+    margin-bottom: 2rem;
+}
+
+a, a:visited {
+    color: $secondary-font;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    margin-bottom: 1rem;
+}
+
+header {
+    background-color: $primary-color;
+}
+
+section {
+    border-bottom: 1px solid lighten($primary-font, 75%);
+    padding: 1rem;
+    @media only screen and (min-width: 992px){
+        padding: 1rem 3rem 2rem;
+    }
+}

@@ -1,0 +1,9 @@
+$white-smoke: #F7F7F4;
+$mikado-yellow: #FFBB11;
+$eerie-black: #1A1A1A;
+
+$primary-background: $white-smoke;
+$primary-color: $mikado-yellow;
+$primary-light: lighten($primary-color, 15%);
+$primary-font: $eerie-black;
+$secondary-font: lighten($primary-font, 40%);

@@ -1,0 +1,71 @@
+.intro {
+    animation: fromTop 2s;
+    animation-fill-mode: backwards;
+    line-height: initial;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.intro-main {
+    color: $primary-color;
+    font-size: 2rem;
+    @media only screen and (min-width: 768px){
+        font-size: 3rem;
+    }
+    @media only screen and (min-width: 992px){
+        font-size: 4rem;
+    }
+}
+
+.intro-sub {
+    color: $primary-color;
+    font-size: 1rem;
+    font-weight: bold;
+    @media only screen and (min-width: 768px){
+        font-size: 1.25rem;
+    }
+}
+
+.sub-heading {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5rem;
+    blockquote {
+        color: $secondary-font;
+        font-style: italic;
+    }
+    @media only screen and (min-width: 768px){
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+}
+
+
+.text-black {
+    color: $secondary-font;
+}
+
+@keyframes fromTop {
+    0% {
+        opacity: 0;
+        transform: translateY(-3rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-3rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

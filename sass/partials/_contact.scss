@@ -1,0 +1,35 @@
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+    label {
+        font-family: "Lato", "Arial", sans-serif;
+    }
+    input[type="email"] {
+        background-color: $primary-light;
+        border: 1px solid $primary-color;
+        font-size: 1.5rem;
+        height: 3rem;
+        margin-bottom: 1rem;
+        padding: 0.5rem;
+    }
+    textarea {
+        background-color: $primary-light;
+        border: 1px solid $primary-color;
+        font-family: "Lora", "Georgia", serif;
+        font-size: 1rem;
+        height: 10rem;
+        margin-bottom: 1rem;
+        padding: 0.5rem;
+        resize: none;
+    }
+    input[type="submit"] {
+        border: 0;
+        @extend .card-button;
+        @extend .active;
+    }
+    @media only screen and (min-width: 768px){
+        width: 50%;
+    }
+}

@@ -1,0 +1,19 @@
+#tech {
+    i {
+        color: $secondary-font;
+        font-size: 4rem;
+        transition: color 1s;
+        &:hover {
+            color: $primary-color;
+        }
+    }
+}
+
+.tech-icon-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    li {
+        margin: 1rem;
+    }
+}
