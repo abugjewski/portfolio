@@ -41,6 +41,12 @@
     }
 }
 
+.card-buttons {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
 .card-button {
     border-radius: 2rem;
     box-shadow: 0.2rem 0.2rem 0.2rem rgba($secondary-font, 0.3);

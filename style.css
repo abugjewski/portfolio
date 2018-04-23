@@ -295,6 +295,14 @@ section {
   .card-description p {
     font-size: 0.8rem; }
 
+.card-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-pack: distribute;
+  justify-content: space-around; }
+
 .card-button, .contact-form input[type="submit"] {
   border-radius: 2rem;
   -webkit-box-shadow: 0.2rem 0.2rem 0.2rem rgba(128, 128, 128, 0.3);
