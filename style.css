@@ -255,7 +255,13 @@ section {
   border-radius: 0 0 0.2rem 0.2rem;
   -webkit-box-shadow: 0.1rem 0.1rem 0.2rem rgba(128, 128, 128, 0.3);
   box-shadow: 0.1rem 0.1rem 0.2rem rgba(128, 128, 128, 0.3);
-  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
   margin: 1rem 0rem;
   width: 100%; }
   @media only screen and (min-width: 768px) {
@@ -291,6 +297,10 @@ section {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  height: 100%;
   padding: 1rem; }
   .card-description p {
     font-size: 0.8rem; }
@@ -311,7 +321,11 @@ section {
   font-family: "Lato", "Arial", sans-serif;
   padding: 0.5rem 2rem;
   text-align: center;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  width: 40%; }
+  @media only screen and (min-width: 768px) {
+    .card-button, .contact-form input[type="submit"] {
+      width: auto; } }
 
 .active, .contact-form input[type="submit"], .active:visited, .contact-form input[type="submit"]:visited {
   background-color: #FFBB11;
